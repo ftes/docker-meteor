@@ -89,6 +89,9 @@ if [ -n "${METEOR_DIR}" ]; then
    fi
    sh /tmp/meteor.sh
    rm /tmp/meteor.sh
+   
+   # Install npm dependencies before building app
+   npm install
 
    # Bundle the Meteor app
    echo "Building the bundle...(this may take a while)"
